@@ -1,3 +1,6 @@
 <h1>Hola {{title}}</h1>
 <button (click)="changeTitle()">change</button>
-<app-product [product]="iterador" *ngFor="let iterador of products"></app-product>
+<app-product 
+    *ngFor="let iterador of products"
+    [product]="iterador">
+</app-product>
